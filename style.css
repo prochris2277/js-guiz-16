@@ -1,7 +1,8 @@
 body {
     margin: 1rem auto;
     padding: 3rem;
-    font-family: sans-serif;background-color: black;
+    font-family: sans-serif;
+    /* background-color: black; */
     color: gold;
 }
 header {
@@ -36,7 +37,16 @@ p{
 }
 #explanation {
     padding: 1rem;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 3px 2px 4px 2px gray;
+    padding: 1rem;
+    font-size: 0.85em;
     text-align: center;
+    margin: 1.5rem 0px;
+    min-height: 2em;
+    color: rgb(175, 133, 168);
 }
 #options {
      width: 60%;
@@ -47,15 +57,15 @@ p{
     align-items: center; */
     
 }
-button:hover{
+button:hover:not(:disabled){
     background-color: rgb(185, 171, 95);
 }
 button {
     padding: 0.5rem;
     font-size: medium;
     border-radius: 5px;
-    background-color: black;
-    color: gold;
+    /* background-color: black; */
+    color: rgb(202, 176, 27);
     box-shadow: 2px 2px 2px 2px gray;
     display: flex;
     flex-direction: column;
@@ -69,7 +79,7 @@ button {
     background-color: lightgreen;
 }
 .incorrect {
-    background-color: lightpink;
+    background-color:  #F08080
 }
 #refreshbtn{
     width: 40%;
@@ -100,6 +110,11 @@ button {
 button{
     padding-block: 0.6em;
 }
+
+#explanation{
+    font-size: 1.3em;
+}
+
 }
 
 @media (min-width: 1024px) {
@@ -140,5 +155,9 @@ button{
 button{
     padding-block: 1em;
     
+}
+#explanation{
+    font-size: 1.5em;
+    width: 70%;
 }
 }
